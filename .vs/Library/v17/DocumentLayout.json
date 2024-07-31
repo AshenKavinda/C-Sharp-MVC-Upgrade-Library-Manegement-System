@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ashen Kavinda\\Desktop\\Library v2\\c-sharp-MVC-Upgrade-Library-Manegement-System-\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{904C8E45-15B2-4A46-8A2C-CE112DFBDF5C}|Library\\Library.csproj|c:\\users\\ashen kavinda\\desktop\\library v2\\c-sharp-mvc-upgrade-library-manegement-system-\\library\\monthlypaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{904C8E45-15B2-4A46-8A2C-CE112DFBDF5C}|Library\\Library.csproj|solutionrelative:library\\monthlypaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{904C8E45-15B2-4A46-8A2C-CE112DFBDF5C}|Library\\Library.csproj|C:\\Users\\Ashen Kavinda\\Desktop\\Library v2\\c-sharp-MVC-Upgrade-Library-Manegement-System-\\library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{904C8E45-15B2-4A46-8A2C-CE112DFBDF5C}|Library\\Library.csproj|solutionrelative:library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{904C8E45-15B2-4A46-8A2C-CE112DFBDF5C}|Library\\Library.csproj|C:\\Users\\Ashen Kavinda\\Desktop\\Library v2\\c-sharp-MVC-Upgrade-Library-Manegement-System-\\library\\formmonthlypayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{904C8E45-15B2-4A46-8A2C-CE112DFBDF5C}|Library\\Library.csproj|solutionrelative:library\\formmonthlypayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{904C8E45-15B2-4A46-8A2C-CE112DFBDF5C}|Library\\Library.csproj|C:\\Users\\Ashen Kavinda\\Desktop\\Library v2\\c-sharp-MVC-Upgrade-Library-Manegement-System-\\library\\formmonthlypayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{904C8E45-15B2-4A46-8A2C-CE112DFBDF5C}|Library\\Library.csproj|solutionrelative:library\\formmonthlypayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{904C8E45-15B2-4A46-8A2C-CE112DFBDF5C}|Library\\Library.csproj|C:\\Users\\Ashen Kavinda\\Desktop\\Library v2\\c-sharp-MVC-Upgrade-Library-Manegement-System-\\library\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{904C8E45-15B2-4A46-8A2C-CE112DFBDF5C}|Library\\Library.csproj|solutionrelative:library\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MonthlyPaymentController.cs",
+              "DocumentMoniker": "C:\\Users\\Ashen Kavinda\\Desktop\\Library v2\\c-sharp-MVC-Upgrade-Library-Manegement-System-\\Library\\MonthlyPaymentController.cs",
+              "RelativeDocumentMoniker": "Library\\MonthlyPaymentController.cs",
+              "ToolTip": "C:\\Users\\Ashen Kavinda\\Desktop\\Library v2\\c-sharp-MVC-Upgrade-Library-Manegement-System-\\Library\\MonthlyPaymentController.cs",
+              "RelativeToolTip": "Library\\MonthlyPaymentController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABgAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T10:09:07.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormMonthlyPayment.cs",
+              "DocumentMoniker": "C:\\Users\\Ashen Kavinda\\Desktop\\Library v2\\c-sharp-MVC-Upgrade-Library-Manegement-System-\\Library\\FormMonthlyPayment.cs",
+              "RelativeDocumentMoniker": "Library\\FormMonthlyPayment.cs",
+              "ToolTip": "C:\\Users\\Ashen Kavinda\\Desktop\\Library v2\\c-sharp-MVC-Upgrade-Library-Manegement-System-\\Library\\FormMonthlyPayment.cs",
+              "RelativeToolTip": "Library\\FormMonthlyPayment.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAwwB0AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T10:05:22.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormMonthlyPayment.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ashen Kavinda\\Desktop\\Library v2\\c-sharp-MVC-Upgrade-Library-Manegement-System-\\Library\\FormMonthlyPayment.cs",
+              "RelativeDocumentMoniker": "Library\\FormMonthlyPayment.cs",
+              "ToolTip": "C:\\Users\\Ashen Kavinda\\Desktop\\Library v2\\Library\\FormMonthlyPayment.cs [Design]",
+              "RelativeToolTip": "..\\Library\\FormMonthlyPayment.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T10:05:21.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\Ashen Kavinda\\Desktop\\Library v2\\c-sharp-MVC-Upgrade-Library-Manegement-System-\\Library\\Payment.cs",
+              "RelativeDocumentMoniker": "Library\\Payment.cs",
+              "ToolTip": "C:\\Users\\Ashen Kavinda\\Desktop\\Library v2\\c-sharp-MVC-Upgrade-Library-Manegement-System-\\Library\\Payment.cs",
+              "RelativeToolTip": "Library\\Payment.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAewF8AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T10:05:16.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ashen Kavinda\\Desktop\\Library v2\\c-sharp-MVC-Upgrade-Library-Manegement-System-\\Library\\Program.cs",
+              "RelativeDocumentMoniker": "Library\\Program.cs",
+              "ToolTip": "C:\\Users\\Ashen Kavinda\\Desktop\\Library v2\\c-sharp-MVC-Upgrade-Library-Manegement-System-\\Library\\Program.cs",
+              "RelativeToolTip": "Library\\Program.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAgwDAAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T10:57:46.567Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
