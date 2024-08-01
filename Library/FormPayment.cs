@@ -13,39 +13,59 @@ namespace Library
 {
     public partial class FormPayment : Form
     {
-        Payment payment;
+        public event EventHandler FormLoad;
+        public event EventHandler Go;
+        public event EventHandler Clear;
         public FormPayment()
         {
             InitializeComponent();
-            payment = new Payment();
-            setComboBoxYear();
-            clearAll();
+            new FormPaymentController(this);
         }
 
-        private void setComboBoxYear()
+        private bool validate()
         {
-            List<int> list = new List<int>();
-            int startYear = payment.getfirstRecordYear();
-            int nowYear = Convert.ToInt32(DateTime.Now.Year);
-            if (startYear != 0 && startYear != -1)
+            bool result = true;
+            if (comboMonth.SelectedIndex == 0)
             {
-                for (int i = nowYear; i >= startYear; i--)
-                {
-                    list.Add(i);
-                }
+                result = false;
             }
-            else
-            {
-                list.Add(nowYear);
-            }
-
+            return result;
+            
+        }
+        public void setComboBoxYear(List<int> list)
+        {
             foreach (int year in list)
             {
                 comboYear.Items.Add(Convert.ToString(year));
             }
         }
-
-        private void clearAll()
+        public int getSelectedYear()
+        {
+            return Convert.ToInt32(comboYear.SelectedItem);
+        }
+        public int getSelectedMonth()
+        {
+            return Convert.ToInt32(comboMonth.SelectedItem);
+        }
+        public string getSelectedType()
+        {
+            return Convert.ToString(comboType.SelectedItem);
+        }
+        public void setTotalLbl(int[] list)
+        {
+            lblRValue.Text = Convert.ToString(list[0]);
+            lblMValue.Text = Convert.ToString(list[1]);
+            lblOValue.Text = Convert.ToString(list[2]);
+        }
+        public void setGrid(DataTable table)
+        {
+            dataGrid.DataSource = table;
+        }
+        public void showMessage(string text)
+        {
+            MessageBox.Show(text);
+        }
+        public void clearAll(DataTable table)
         {
             comboYear.SelectedIndex = 0;
             comboMonth.SelectedIndex = 0;
@@ -53,69 +73,31 @@ namespace Library
             lblRValue.Text = ": .........";
             lblMValue.Text = ": .........";
             lblOValue.Text = ": .........";
-            dataGrid.DataSource = payment.getAllPayment();
+            setGrid(table);
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
+
+
+
+        private void FormPayment_Load(object sender, EventArgs e)
         {
-            clearAll();
+            FormLoad?.Invoke(this, EventArgs.Empty);
         }
-
-        private int validate()
-        {
-            int result = 1;
-            if (comboMonth.SelectedIndex == 0)
-            {
-                result = 0;
-            }
-
-            return result;
-            
-        }
-
         private void btnGo_Click(object sender, EventArgs e)
         {
-            int validation = validate();
-            if (validation == 1)
+            if (validate())
             {
-                int year = Convert.ToInt32(comboYear.SelectedItem);
-                int month = Convert.ToInt32(comboMonth.SelectedItem);
-                String type = null;
-                switch(comboType.SelectedItem)
-                {
-                    case "Register":
-                        type = "R";
-                        object[] arr = payment.getPaymentReport(year,month,type);
-                        dataGrid.DataSource = arr[1];
-                        break;
-                    case "Monthly":
-                        type = "M";
-                        object[] arr2 = payment.getPaymentReport(year, month, type);
-                        dataGrid.DataSource = arr2[1];
-                        break;
-                    case "OverDue":
-                        type = "O";
-                        object[] arr3 = payment.getPaymentReport(year, month, type);
-                        dataGrid.DataSource = arr3[1];
-                        break;
-                    default:
-                        dataGrid.DataSource = payment.getAllPayment();
-                        break;
-                }
-
-                object[] arrR = payment.getPaymentReport(year, month, "R");
-                object[] arrM = payment.getPaymentReport(year, month, "M");
-                object[] arrO = payment.getPaymentReport(year, month, "O");
-
-                lblRValue.Text =Convert.ToString(arrR[0]);
-                lblMValue.Text =Convert.ToString(arrM[0]);
-                lblOValue.Text =Convert.ToString(arrO[0]);
-                
+                Go?.Invoke(this, EventArgs.Empty);  
             }
             else
             {
-                MessageBox.Show("Input Error!");
+                showMessage("Input Error!");
             }
         }
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            Clear?.Invoke(this, EventArgs.Empty);
+        }
+
     }
 }

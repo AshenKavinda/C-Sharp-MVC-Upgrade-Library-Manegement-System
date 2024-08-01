@@ -13,23 +13,36 @@ namespace Library
 {
     public partial class FormSettings : Form
     {
-        Settings settings;
         public FormSettings()
         {
             InitializeComponent();
-            settings = new Settings();
-            setAllTextBox();
+            new FormSettingsController(this);
         }
 
-        private void setAllTextBox()
-        {
-            txtRegister.Text = Convert.ToString(settings.getRegisterFee());
-            txtMonthly.Text = Convert.ToString(settings.getMonthlyFee());
-            txtOverDue.Text = Convert.ToString(settings.getOverDueFee());
-            txtLimit.Text = Convert.ToString(settings.getOverDueLimit());
-            txtOverDueBoolLimit.Text = Convert.ToString(settings.getOverDueBookLimit());
-            txtMinimumBookLimit.Text = Convert.ToString(settings.getMinimumBookLimit());
+        public event EventHandler Save;
+        public event EventHandler FormLoad;
 
+        public void setAllTextBox(int[] list)
+        {
+            TextBox[] txtList = { txtRegister, txtMonthly, txtOverDue, txtLimit, txtOverDueBoolLimit, txtMinimumBookLimit };
+            if (list.Length == 6)
+            {
+                for (int i = 0; i < 6; i++)
+                {
+                    txtList[i].Text = Convert.ToString(list[i]);
+                }
+            }
+        }
+
+        public string[] getAllTextBox()
+        {
+            TextBox[] txtList = {txtRegister,txtMonthly,txtOverDue,txtLimit,txtOverDueBoolLimit,txtMinimumBookLimit};
+            string[] list = new string[6];
+            for (int i = 0; i < 6; i++)
+            {
+                list[i] = txtList[i].Text;
+            }
+            return list;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -37,13 +50,13 @@ namespace Library
             DialogResult result = MessageBox.Show("Confirm", "Sure", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             if (result == DialogResult.OK) 
             {
-                settings.updateRegisterFee(txtRegister.Text);
-                settings.updateMonthlyFee(txtMonthly.Text);
-                settings.updateOverDueFee(txtOverDue.Text);
-                settings.UpdateOverDueLimit(txtLimit.Text);
-                settings.UpdateOverDueBookLimit(txtOverDueBoolLimit.Text);
-                settings.UpdateMinimumBookLimit(txtMinimumBookLimit.Text);
+                Save?.Invoke(this, new EventArgs());
             }
+        }
+
+        private void FormSettings_Load(object sender, EventArgs e)
+        {
+            FormLoad?.Invoke(this, EventArgs.Empty);
         }
     }
 }

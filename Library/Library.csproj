@@ -87,6 +87,7 @@
     <Compile Include="FormPayment.Designer.cs">
       <DependentUpon>FormPayment.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPaymentController.cs" />
     <Compile Include="FormReservationHandle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +106,7 @@
     <Compile Include="FormSettings.Designer.cs">
       <DependentUpon>FormSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSettingsController.cs" />
     <Compile Include="Payment.cs" />
     <Compile Include="MonthlyPaymentController.cs" />
     <Compile Include="Program.cs" />

@@ -240,6 +240,7 @@
             this.Controls.Add(this.comboYear);
             this.Name = "FormPayment";
             this.Text = "Payment";
+            this.Load += new System.EventHandler(this.FormPayment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

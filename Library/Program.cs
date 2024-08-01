@@ -45,9 +45,10 @@ namespace Library
             */
 
             //mvc test payment
-            
+            /*
             FormMonthlyPayment payment = new FormMonthlyPayment();
             Application.Run(payment);
+            */
             
 
             //mvc test reservation
@@ -55,6 +56,16 @@ namespace Library
             FormReservationHandle formReservationHandle = new FormReservationHandle();
             Application.Run(formReservationHandle);
             */
+
+            //MVC test Settings
+            /*
+            FormSettings settings = new FormSettings(); 
+            Application.Run(settings);
+            */
+
+            //MVC test PaymentReport
+            FormPayment payment = new FormPayment();
+            Application.Run(payment);
 
 
             //Customer customer = new Customer();
