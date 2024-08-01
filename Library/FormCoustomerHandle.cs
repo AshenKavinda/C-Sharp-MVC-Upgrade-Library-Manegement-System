@@ -32,6 +32,7 @@ namespace Library
         public FormCoustomerHandle()
         {
             InitializeComponent();
+            new CustomerController(this);
         }
 
         public void setCustomerAvilability(string name)

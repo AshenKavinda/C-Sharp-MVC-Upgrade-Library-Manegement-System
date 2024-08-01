@@ -12,7 +12,6 @@ namespace Library
 {
     public partial class FormBook : Form
     {
-        Book book;
 
         public event EventHandler addBook;
         public event EventHandler editBook;
@@ -28,7 +27,7 @@ namespace Library
         public FormBook()
         {
             InitializeComponent();
-            book = new Book();
+            new BookController(this);
             
         }
 

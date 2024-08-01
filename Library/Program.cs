@@ -25,7 +25,7 @@ namespace Library
             //Application.Run(new FormHandOver());
             //Application.Run(new FormBook());
             //Application.Run(new FormSettings());
-            //Application.Run(new FormMenu());
+            Application.Run(new FormMenu());
             //Application.Run(new FormPayment());
 
             
@@ -64,8 +64,10 @@ namespace Library
             */
 
             //MVC test PaymentReport
+            /*
             FormPayment payment = new FormPayment();
             Application.Run(payment);
+            */
 
 
             //Customer customer = new Customer();
